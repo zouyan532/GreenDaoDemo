@@ -12,21 +12,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Person person1 = new Person(1l,"张三");
-        PersonDaoHelper.insert(person1);
-        person1 = new Person(2l,"张四");
-        PersonDaoHelper.insert(person1);
-        person1 = new Person(3l,"张五");
-        PersonDaoHelper.insert(person1);
-        person1 = new Person(4l,"张六");
-        PersonDaoHelper.insert(person1);
-        List<Person> persons = PersonDaoHelper.queryAll();
+        List<Person> persons = DaoHelper.queryAll();
+        Person person1 = new Person(1l,"张三",123);
+        DaoHelper.insert(person1);
+        person1 = new Person(2l,"张四",12);
+        DaoHelper.insert(person1);
+        person1 = new Person(3l,"张五",12);
+        DaoHelper.insert(person1);
+        person1 = new Person(4l,"张六",1);
+        DaoHelper.insert(person1);
         person1.setName("张器");
         person1.setId(2l);
-        PersonDaoHelper.update(person1);
-        persons = PersonDaoHelper.queryAll();
-        PersonDaoHelper.delete(1l);
-        persons = PersonDaoHelper.queryAll();
+        DaoHelper.update(person1);
+        persons = DaoHelper.queryAll();
+        DaoHelper.delete(1l);
+        persons = DaoHelper.queryAll();
         Log.i("TAG","TAG");
     }
 }

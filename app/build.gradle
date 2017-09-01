@@ -15,7 +15,7 @@ android {
     //greendao配置
     greendao {
         //版本号，升级时可配置
-        schemaVersion 1
+        schemaVersion 4
         daoPackage 'demo.zouyan.com.greendaodemo.gen'
         targetGenDir 'src/main/java'
     }
@@ -37,4 +37,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //greendao依赖
     compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.0'
 }

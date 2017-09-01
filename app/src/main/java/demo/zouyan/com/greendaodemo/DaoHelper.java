@@ -6,7 +6,7 @@ import java.util.List;
  * Created by Boosal on 2017/9/1.
  */
 
-public class PersonDaoHelper {
+public class DaoHelper {
     /**
      * 添加数据，如果有重复则覆盖
      *

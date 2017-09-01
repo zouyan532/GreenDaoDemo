@@ -15,10 +15,12 @@ public class Person {
     private Long id;
     @Unique
     private String name;
-    @Generated(hash = 628813901)
-    public Person(Long id, String name) {
+    private int age;
+    @Generated(hash = 1145075130)
+    public Person(Long id, String name, int age) {
         this.id = id;
         this.name = name;
+        this.age = age;
     }
     @Generated(hash = 1024547259)
     public Person() {
@@ -34,6 +36,12 @@ public class Person {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public int getAge() {
+        return this.age;
+    }
+    public void setAge(int age) {
+        this.age = age;
     }
 
 }
